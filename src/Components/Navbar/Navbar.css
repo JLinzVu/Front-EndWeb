@@ -1,0 +1,126 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    position: fixed;
+    /* position: -webkit-sticky; */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: #FAA0A0;
+}
+
+.navbar__contents {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__logo h4 {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+    color: #2B0014;
+    transition: all 0.2s linear;
+}
+
+.navbar__logo h4:hover {
+    color: #FFF5EE;
+}
+
+.navbar__links__wrapper {
+    margin: 0;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar__links li {
+    list-style: none;
+}
+
+.navbar__links li a {
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    color: #2B0014;
+    font-size: 22px;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.navbar__links li a:hover {
+    color: #FFF5EE;
+    transition: all 0.2s linear;
+}
+
+.navbar__links__drop {
+    overflow: hidden;
+}
+
+.navbar__handle {
+    display: none;
+    color: #2B0014;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.2s linear;
+}
+
+.navbar__handle:hover {
+    color: #FFF5EE;
+}
+
+.dropBtn {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+    padding: 0 0 0 1em;
+    min-height: 6vh;
+    cursor: pointer;
+    color: #2B0014;
+    transition: all 0.2s linear;
+}
+
+.dropBtn:hover {
+    color: #FFF5EE;
+}
+
+.dropdown__menu {
+    display: block;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    min-width: 160px;
+    background-color: #FAA0A0;
+    transition: all 0.2s linear;
+}
+
+.dropdown__menu * {
+    padding-bottom: 0.7em;
+    display: block;
+}
+
+.navbar__links__drop:hover .dropdown__menu {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar__links__drop:hover .dropdown__menu * {
+    padding-bottom: 0.7em;
+}
